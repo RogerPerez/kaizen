@@ -4,7 +4,7 @@
 
 A modern, production-ready task management application built with **React** and **microfrontend architecture**, embodying the Kaizen philosophy of continuous improvement. This project demonstrates advanced frontend development patterns, scalable architecture, and modern web technologies.
 
-*Developed by **Roger Pérez** - showcasing expertise in modern React development, microfrontend architecture, and production-ready applications.*
+_Developed by **Roger Pérez** - showcasing expertise in modern React development, microfrontend architecture, and production-ready applications._
 
 ## 🎯 Kaizen Philosophy Integration
 
@@ -21,8 +21,9 @@ This application embodies the **Kaizen** principles of continuous improvement in
 This application follows a **microfrontend architecture** pattern with complete separation of concerns:
 
 ### Shell Application (Orchestrator)
+
 - **Purpose**: Main container and coordination layer
-- **Responsibilities**: 
+- **Responsibilities**:
   - Global state management with Zustand
   - Inter-microfrontend routing with React Router
   - Shared services (notifications, API client)
@@ -31,6 +32,7 @@ This application follows a **microfrontend architecture** pattern with complete 
 ### Independent Microfrontends
 
 #### 1. Task List Microfrontend (`/`)
+
 - **Purpose**: Main dashboard and task overview
 - **Features**:
   - Real-time task statistics with visual indicators
@@ -40,6 +42,7 @@ This application follows a **microfrontend architecture** pattern with complete 
   - Bulk operations and navigation
 
 #### 2. Task Create Microfrontend (`/tasks/create`)
+
 - **Purpose**: New task creation with validation
 - **Features**:
   - Comprehensive form with validation
@@ -48,6 +51,7 @@ This application follows a **microfrontend architecture** pattern with complete 
   - Optimistic UI updates
 
 #### 3. Task Detail Microfrontend (`/tasks/:id`)
+
 - **Purpose**: Detailed task view and management
 - **Features**:
   - Complete task information display
@@ -56,6 +60,7 @@ This application follows a **microfrontend architecture** pattern with complete 
   - Action buttons for edit/delete
 
 #### 4. Task Edit Microfrontend (`/tasks/:id/edit`)
+
 - **Purpose**: Task modification interface
 - **Features**:
   - Pre-populated form with current data
@@ -65,23 +70,27 @@ This application follows a **microfrontend architecture** pattern with complete 
 ## 🛠️ Technology Stack
 
 ### Core Technologies
+
 - **Frontend Framework**: React 18 with TypeScript
 - **Build Tool**: Vite (fast development and optimized builds)
 - **Styling**: Tailwind CSS with custom design system
 - **Icons**: Lucide React (consistent iconography)
 
 ### State Management
+
 - **Global State**: Zustand (lightweight, performant)
 - **Server State**: TanStack React Query (caching, synchronization)
 - **Local State**: React hooks (component-specific state)
 
 ### Architecture & Patterns
+
 - **Routing**: React Router DOM v6 (declarative routing)
 - **Code Splitting**: React.lazy (microfrontend lazy loading)
 - **API Integration**: RESTful with JSONPlaceholder
 - **Error Handling**: Comprehensive error boundaries
 
 ### Development Tools
+
 - **TypeScript**: Full type safety and IntelliSense
 - **ESLint**: Code quality and consistency
 - **Environment Management**: Centralized configuration
@@ -135,6 +144,7 @@ src/
 ## 🚀 Kaizen-Inspired Features
 
 ### Smart Workflow Management
+
 - **🟣 In Progress Priority**: Tasks being worked on appear at the top for focus
 - **🚨 Urgent Task System**: Visual alerts for time-sensitive items (due within 3 days)
 - **📊 Real-Time Statistics**: Live dashboard with completion rates and progress tracking
@@ -142,6 +152,7 @@ src/
 - **🔍 Advanced Filtering**: Status, priority, and urgency-based filtering
 
 ### Continuous Improvement Elements
+
 - **📈 Visual Progress Indicators**: Color-coded status bars and completion states
 - **⚡ Optimistic Updates**: Immediate UI feedback with background API synchronization
 - **🔄 Status Flow Management**: Seamless progression from Todo → In Progress → Done
@@ -149,12 +160,14 @@ src/
 - **🎨 Accessibility**: WCAG compliant with keyboard navigation support
 
 ### CRUD Operations
+
 - ✅ **Create**: Add new tasks with comprehensive validation
 - ✅ **Read**: View tasks with advanced filtering and sorting
 - ✅ **Update**: Edit task details with real-time validation
 - ✅ **Delete**: Remove tasks with confirmation dialogs
 
 ### Advanced Technical Features
+
 - 🎯 **Smart Sorting Algorithm**: IN PROGRESS → TODO → DONE with priority sub-sorting
 - 🔍 **Real-Time Search**: Instant filtering across title and description
 - 📊 **Statistics Dashboard**: Visual metrics for productivity tracking
@@ -165,6 +178,7 @@ src/
 ## 🔧 API Integration
 
 ### JSONPlaceholder Integration
+
 - **Base URL**: `https://jsonplaceholder.typicode.com`
 - **Strategy**: Fire-and-forget with optimistic updates
 - **Endpoints**:
@@ -174,11 +188,13 @@ src/
   - `DELETE /todos/:id` - Task deletion
 
 ### Data Transformation
+
 - Maps JSONPlaceholder `todos` to our `Task` interface
 - Enhances data with priority levels and due dates
 - Maintains compatibility while extending functionality
 
 ### Error Handling
+
 - Graceful degradation on API failures
 - User-friendly error messages
 - Retry mechanisms with exponential backoff
@@ -186,18 +202,21 @@ src/
 ## 🎨 Design System
 
 ### Visual Hierarchy
+
 - **Typography**: Clean font hierarchy with proper contrast ratios
 - **Color Palette**: Semantic colors for status and priority indication
 - **Spacing**: Consistent 8px grid system throughout
 - **Animations**: Subtle transitions and micro-interactions
 
 ### Component Design
+
 - **Status Indicators**: Color-coded borders and backgrounds
 - **Priority Badges**: Visual priority classification
 - **Urgency Alerts**: Animated indicators for time-sensitive tasks
 - **Progress Bars**: Visual completion status
 
 ### Responsive Breakpoints
+
 - **Mobile**: 320px - 768px (mobile-first approach)
 - **Tablet**: 768px - 1024px (optimized layouts)
 - **Desktop**: 1024px+ (full feature set)
@@ -207,18 +226,21 @@ src/
 ### Three-Layer Architecture
 
 #### 1. Global State (Zustand)
+
 - **Task Collection**: Complete task dataset
 - **UI State**: Filters, search terms, selected items
 - **Optimistic Updates**: Immediate UI changes
 - **Smart Sorting**: Computed task ordering
 
 #### 2. Server State (React Query)
+
 - **Data Fetching**: Initial load from JSONPlaceholder
 - **Cache Management**: Intelligent data caching
 - **Background Sync**: Automatic data synchronization
 - **Error Recovery**: Retry logic and error handling
 
 #### 3. Local State (React useState)
+
 - **Form Data**: Input values and validation
 - **Modal State**: Dialog visibility and content
 - **Component UI**: Loading states and interactions
@@ -234,6 +256,7 @@ src/
 ## 🚦 Getting Started
 
 ### Prerequisites
+
 - Node.js 18+ and npm/yarn
 - Modern browser with ES2020 support
 
@@ -278,24 +301,28 @@ npm run lint     # Run ESLint
 ## 🏆 Best Practices Implemented
 
 ### Architecture Patterns
+
 - **Separation of Concerns**: Each microfrontend has single responsibility
 - **Dependency Injection**: Shared services available to all modules
 - **Error Boundaries**: Graceful error handling and recovery
 - **Code Splitting**: Lazy loading for optimal performance
 
 ### Code Quality
+
 - **TypeScript**: 100% type coverage for reliability
 - **ESLint**: Consistent code style and quality
 - **Component Composition**: Reusable, testable components
 - **Custom Hooks**: Logic separation and reusability
 
 ### Performance Optimization
+
 - **Lazy Loading**: Microfrontends loaded on demand
 - **Memoization**: Optimized re-renders with React.memo
 - **Efficient Sorting**: Optimized algorithms for large datasets
 - **Bundle Optimization**: Tree shaking and code splitting
 
 ### User Experience
+
 - **Accessibility**: WCAG 2.1 AA compliance
 - **Responsive Design**: Mobile-first approach
 - **Loading States**: Clear feedback during operations
@@ -304,18 +331,21 @@ npm run lint     # Run ESLint
 ## 📈 Scalability Considerations
 
 ### Horizontal Scaling
+
 - **Modular Architecture**: Easy addition of new microfrontends
 - **Independent Development**: Teams can work on separate modules
 - **Technology Flexibility**: Different tech stacks per microfrontend
 - **Deployment Independence**: Separate deployment pipelines
 
 ### Performance Scaling
+
 - **Code Splitting**: Reduced initial bundle size
 - **Lazy Loading**: On-demand resource loading
 - **Caching Strategy**: Intelligent data caching
 - **Optimistic Updates**: Perceived performance improvements
 
 ### Maintenance Scaling
+
 - **Type Safety**: Reduced runtime errors
 - **Component Library**: Reusable UI components
 - **Centralized Configuration**: Easy environment management
@@ -335,6 +365,7 @@ This **Kaizen Task Manager** demonstrates continuous improvement through:
 ## 🔮 Future Enhancements
 
 ### Planned Features
+
 - **Drag & Drop**: Visual task reordering
 - **Team Collaboration**: Multi-user task assignment
 - **Time Tracking**: Built-in productivity monitoring
@@ -342,6 +373,7 @@ This **Kaizen Task Manager** demonstrates continuous improvement through:
 - **Mobile App**: React Native implementation
 
 ### Technical Improvements
+
 - **PWA Support**: Offline functionality
 - **Real-time Sync**: WebSocket integration
 - **Advanced Caching**: Service worker implementation
@@ -351,7 +383,7 @@ This **Kaizen Task Manager** demonstrates continuous improvement through:
 
 ## 👨‍💻 About the Developer
 
-**Roger Pérez** - Senior Frontend Developer specializing in React, TypeScript, and modern web architecture. This project showcases expertise in:
+**Roger Pérez** - Senior/Lead Frontend Developer specializing in React, TypeScript, and modern web architecture. This project showcases expertise in:
 
 - **Microfrontend Architecture**: Scalable, modular application design
 - **Advanced React Patterns**: Hooks, context, state management, and performance optimization
@@ -359,7 +391,7 @@ This **Kaizen Task Manager** demonstrates continuous improvement through:
 - **Modern Tooling**: Vite, TanStack Query, Zustand, and contemporary development practices
 - **Production-Ready Code**: Error handling, accessibility, responsive design, and performance optimization
 
-*Built with the Kaizen philosophy of continuous improvement - making task management better, one feature at a time.*
+_Built with the Kaizen philosophy of continuous improvement - making task management better, one feature at a time._
 
 ## 📄 License
 
