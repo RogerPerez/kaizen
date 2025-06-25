@@ -1,5 +1,4 @@
-import React from 'react';
-import { ShellApp } from './microfrontends/shell/ShellApp';
+import { ShellApp } from "./microfrontends/shell/ShellApp";
 
 /**
  * Main Application Entry Point
